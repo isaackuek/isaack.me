@@ -1,0 +1,305 @@
+@import "bourbon/bourbon";
+@import 'base/grid-settings';
+@import "neat/neat";
+@import 'base/base';
+@import "normalize/normalize";
+
+$link-colors: #307EA9;
+$menu-link: #444444;
+
+// Typography
+
+a {
+	color: $link-colors;
+	text-decoration: none;
+	&:hover {
+		color: $link-colors;
+	}
+}
+
+.wrap {
+	@include outer-container;
+}
+
+.site-header {
+	margin: 75px 0 25px;
+	text-transform: uppercase;
+
+	.menu-item {
+		float: right;
+		margin: 0;
+		padding: 10px;
+	}
+
+	li {
+		display: inline;
+		padding-left: 15px;
+		list-style-type: square;
+		line-height: $unitless-line-height;
+		margin-left: 0;
+	}
+	
+	a {
+		color: $menu-link;
+		text-decoration: none;
+		transition: color 0.25s ease-in 0s;
+		&:hover {
+			color: $link-colors;
+		}
+	}
+
+
+
+	.name a {
+		font-size: 30px;
+	}
+}
+
+.tile {
+	@include outer-container;
+	@include span-columns(6);
+	@include omega(2n);
+	margin-bottom: $gutter;
+
+	.entry-date {
+		color: lighten($dark-gray, 25);
+	}
+
+	.post-title {
+		margin-bottom: $gutter / 6;
+		margin-top: $gutter / 6;
+	}
+
+	.post-teaser {
+		@include backface-visibility(hidden);
+		position: relative;
+		display: block;
+		overflow: hidden;
+		margin-bottom: $gutter / 2;
+		img {
+			@include transition(transform 0.3s);
+			vertical-align: middle;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			@include transition(background 0.3s);
+		}
+		&:hover {
+			img {
+				@include transition (opacity 1.0s ease-in 0s);
+			}
+			&:after {
+				background: rgba($dark-gray, 0.6);
+				content: '\f05a';
+				color: #FFF;
+				font-family: FontAwesome;
+				font-size: $base-font-size * 4;
+				text-transform: uppercase;
+				text-align: center;
+				padding-top: 16%;
+			}
+		}
+	}
+
+}
+
+// For dividers in between.
+.hero, .footer {
+	background-size: cover;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5) inset;
+}
+
+.hero {
+	background-color: #2B2B2B;
+    height: 200px;
+}
+
+.footer {
+    margin-top: 150px;
+    padding: 25px;
+}
+
+.social {
+	a {
+		float: right;
+		color: white;
+		padding-left: 15px;
+	}
+}
+
+// For portfolio posts
+
+.page-title{
+	padding: 10px 10px 10px 23px;
+	border-left: 7px solid #EEE;
+	margin: 30px -30px 30px;
+	h1 {
+		margin: 0;	
+	}
+}
+
+.skills {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #999;
+}
+.inner-wrap {
+	h1, h2 {
+		padding: 10px 10px 10px 23px;
+		border-left: 7px solid #EEE;
+		margin: 20px -30px 20px;
+	}
+	.thumbnail {
+		img {
+			border-radius: 5px;
+			margin: 5px -60px;
+			max-width: 770px;
+		}
+		figcaption {
+			padding-left: 2 * $gutter;
+			padding-right: 2 * $gutter;
+			font-family: $georgia;
+			font-size: 12px;
+			color: lighten($dark-gray, 10);
+			text-align: center;
+			clear: both;
+			padding-bottom: 10px;
+		}
+
+	}
+}
+
+.gallery {
+	padding: 15px 0px 15px 0px;
+	margin: 5px -60px;
+	a {
+		@include span-columns(4);
+		@include omega(3n);
+		margin-bottom: 10px;
+		img {	
+			border-radius: 5px;
+			vertical-align: auto;
+			box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+		}
+	}
+}
+
+// Lightbox in Posts HOT DAMN
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	color: #FFF;
+	text-align: center;
+
+
+	&:hover {
+		color: #FFF;
+	}
+
+	&:target {
+		outline: none;
+		display: block;
+	}
+
+	img {
+		max-width: 90%;
+		max-height: 80%;
+		margin-top: 2%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+}
+
+// Footnotes 
+.footnotes {
+	font-family: $georgia;
+	ol {
+		// Restores to normal numbered list
+		@extend %default-ol;	
+	}
+	p, li {
+		font-size: 12px;
+	}
+	&:before {
+		content: 'Footnotes:';
+		font-weight: 700;
+	}
+}
+
+// Page Navigation
+.pagination {
+	@include outer-container();
+	.back {
+		float: left;
+	}
+	.next {
+		float: right;
+	}
+}
+
+// For Resume and potentially other lists on posts
+// .post-content {
+// 	ul {
+// 		@extend %default-ul;
+// 	}
+// 	ol {
+// 		@extend %default-ol;
+// 	}
+// }
+
+.button {
+    border-color: $link-colors;
+    border: 1px solid;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 13px 26px;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+   		color: $link-colors;
+    }
+}
+
+.resumeSkill {
+	@include span-columns(4);
+	h3 {
+		text-transform: uppercase;
+		color: #999;
+		margin-bottom: 0.25em;
+	}
+}
+.resumeContent {
+	@include span-columns(8);
+	h3 {
+		margin-bottom: 0;
+	}
+}
+
+// Add padding to slide deck.
+.slidedeck {
+	@include pad(20px 0px default);
+}
+
+.center {
+	@include span-columns(6);
+	@include shift(3);
+	text-align: center;
+	margin-top: 15%;
+	margin-bottom: 20%;
+}

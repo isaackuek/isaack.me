@@ -1,0 +1,24 @@
+<header class="site-header">
+
+  <div class="wrap">
+
+    <ul class="menu-item">
+      {% for page in site.pages %}
+        <!-- Bug where Jekyll + Jekyll-assets lists the home page. -->
+        {% if page.url != '/' %}
+          <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>    
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <section class="name">
+      <a class="site-title" href="{{ site.baseurl }}/">
+        ISAAC<strong>KUEK</strong>
+      </a>
+    </section>
+
+
+  </div>
+</header>
+
+<div class="hero" style="background-image: url({% asset_path sky2.png %});"></div>

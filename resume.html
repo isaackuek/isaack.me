@@ -1,0 +1,52 @@
+---
+layout: page
+title: "Resume"
+permalink: /resume/
+skillsets:
+  design: [Sketching, Wireframing, Adobe Illustrator, Adobe Photoshop]
+  prototyping: [Paper, HTML & CSS, Axure, Omnigraffle, Sketch 3, ZURB Foundation]
+  research: [Personas/Scenarios, Survey Design, User Interviews, Heuristic Evaluations, Market Research]
+  languages: [Java, Javascript, SQL, UNIX]
+---
+
+<div class="resumeSkill">
+	{% for skillset in page.skillsets %}
+		<h3> {{ skillset[0] }} </h3>
+		{% assign skills = skillset[1] %}
+		<ul>
+			{% for skill in skills %}
+			<li>{{ skill }}</li>
+			{% endfor %}
+		</ul>
+	{% endfor %}
+</div>
+
+<div class="resumeContent">
+	<h2>Work Experience</h2>
+	<h3>Network Lead | UW IT Learning Technologies</h3>
+	<p>2013 - Present</p>
+
+	<ul>
+		<li>Developed scalable and automated OS deployment systems with DeployStudio.</li>
+		<li>Analyzed and optimized internal workflows based on surveys and user research.</li>
+	</ul>
+	
+	<h3>System Administrator (Mac OS) | UW IT Learning Technologies</h3>
+	<p>2012 - 2013</p>
+	<ul>
+		<li>Developed and deployed customized OS X (Lion, Mountain Lion, and Mavericks) images to 300+ machines.</li>
+		<li>Developed in-house applications and performed hardware and software troubleshooting.</li>
+	</ul>
+
+	<h2>Education</h2>
+	<h3>University of Washington, Seattle</h3>
+	<p>Graduating in Spring 2015</p>
+	<p>B. Sc. Informatics, Human Computer Interaction </p>
+
+	<br>
+
+	<a href="http://isaack.me/resume/IsaacKuekResumeWI2014.pdf" class="button">download full resume (PDF)</a>
+
+	<br>
+
+</div>
