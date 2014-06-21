@@ -3,6 +3,7 @@ layout: page
 title: About
 subtitle: Hi.
 permalink: /about/
+banner: gasworks.png
 ---
 
 I'm Isaac, an [Informatics][info] undergraduate in my junior year at the University of Washington, graduating in Spring 2015.

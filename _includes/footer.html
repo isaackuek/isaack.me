@@ -1,5 +1,12 @@
 <footer class="site-footer">
-  <div class="footer" style="background-image: url({% asset_path gray.png %});">
+  <div class="footer" style="
+  background-image: url(
+  {% if page.banner %}
+      /images/{{ page.banner }}
+  {% else %}
+      {% asset_path gray.png %}
+  {% endif %}
+  );">
     
     <div class="wrap">
       <section class="social">
