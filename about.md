@@ -8,7 +8,7 @@ banner: gasworks.png
 
 I'm Isaac, an [Informatics][info] undergraduate in my junior year at the University of Washington, graduating in Spring 2015.
 
-I'm a Seattle based UX designer and front end web developer. I enjoy learning new things and skills. I've recently started learning Swift and making latte art to compliment my caffeine induced mornings. 
+I'm a Seattle based UX designer and front end web developer. I enjoy learning new things and skills. I've recently started learning Swift and making latte art to complement my caffeine induced mornings.
 
 Thanks for dropping by!
 
