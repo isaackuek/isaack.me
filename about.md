@@ -13,7 +13,7 @@ I'm a Seattle based UX designer and front end web developer. I enjoy learning ne
 Thanks for dropping by!
 
 ## This Site
-I created this site with Jekyll, a static site generator. I considered several options prior to this: A WordPress powered site, a Bootstrap/Foundation based site, and even a full on Squarespace hosted site. 
+I created this site with Jekyll, a static site generator. I considered several options prior to this; a WordPress powered site, a Bootstrap/Foundation based site, and even a full on Squarespace hosted site. 
 
 I eventually settled with Jekyll as the main building block of this site because of its versatile and light weight nature. I can write posts in markup and also HTML! Isn't that awesome? 
 
