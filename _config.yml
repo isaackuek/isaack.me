@@ -16,4 +16,5 @@ assets:
   sources:
     - _assets/javascripts
     - _assets/stylesheets
-    - _assets/images  
+    - _assets/images
+    - _assets/fonts

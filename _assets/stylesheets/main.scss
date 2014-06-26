@@ -3,6 +3,7 @@
 @import "neat/neat";
 @import 'base/base';
 @import "normalize/normalize";
+@import "fonts";
 
 $link-colors: #307EA9;
 $menu-link: #444444;
@@ -38,7 +39,7 @@ a {
 		line-height: $unitless-line-height;
 		margin-left: 0;
 	}
-	
+
 	a {
 		color: $menu-link;
 		text-decoration: none;
@@ -140,7 +141,7 @@ a {
 	border-left: 7px solid #EEE;
 	margin: 30px -30px 30px;
 	h1 {
-		margin: 0;	
+		margin: 0;
 	}
 }
 
@@ -182,7 +183,7 @@ a {
 		@include span-columns(4);
 		@include omega(3n);
 		margin-bottom: 10px;
-		img {	
+		img {
 			border-radius: 5px;
 			vertical-align: auto;
 			box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
@@ -223,12 +224,12 @@ a {
 	}
 }
 
-// Footnotes 
+// Footnotes
 .footnotes {
 	font-family: $georgia;
 	ol {
 		// Restores to normal numbered list
-		@extend %default-ol;	
+		@extend %default-ol;
 	}
 	p, li {
 		font-size: 12px;
