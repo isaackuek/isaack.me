@@ -544,7 +544,7 @@ a {
 
 .page-title {
   padding: 10px 10px 10px 23px;
-  border-left: 2px solid #EEE;
+  border-left: 7px solid #EEE;
   margin: 30px -30px 30px; }
   .page-title h1 {
     margin: 0; }
@@ -556,7 +556,7 @@ a {
 
 .inner-wrap h1, .inner-wrap h2 {
   padding: 10px 10px 10px 23px;
-  border-left: 2px solid #EEE;
+  border-left: 7px solid #EEE;
   margin: 20px -30px 20px; }
 .inner-wrap .thumbnail img {
   border-radius: 5px;

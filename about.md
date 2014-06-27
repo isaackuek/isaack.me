@@ -13,15 +13,15 @@ I'm a Seattle based UX designer and front end web developer. I enjoy learning ne
 Thanks for dropping by!
 
 ## This Site
-I created this site with Jekyll, a static site generator. I considered several options prior to this; a WordPress powered site, a Bootstrap/Foundation based site, and even a full on Squarespace hosted site. 
+I created this site with Jekyll, a static site generator. I considered several options prior to this; a WordPress powered site, a Bootstrap/Foundation based site, and even a full on Squarespace hosted site.
 
-I eventually settled with Jekyll as the main building block of this site because of its versatile and light weight nature. I can write posts in markup and also HTML! Isn't that awesome? 
+I eventually settled with Jekyll as the main building block of this site because of its versatile and light weight nature. I can write posts in markup and also HTML! Isn't that awesome?
 
 <div class="skills">
 	<h3>NITTY GRITTY DETAILS</h3>
 </div>
 
-> This site runs on [Jekyll][jekyll] with the following plugins: [Jekyll-Assets][1], [Neat][2], [Bourbon][3], [Bitters][4] and SASS. 
+> This site runs on [Jekyll][jekyll] with the following plugins: [Jekyll-Assets][1], [Neat][2], [Bourbon][3], [Bitters][4] and SASS.
 
 > Visit my [Github][github] to see the source code.
 
@@ -32,8 +32,9 @@ I eventually settled with Jekyll as the main building block of this site because
 </a>
 
 [info]: https://ischool.uw.edu/
-[github]: http://github.com/{{ site.username }}
+[github]: http://github.com/{{ site.username }}/isaack.me
 [jekyll]: http://jekyllrb.com/
+
 [1]: https://github.com/ixti/jekyll-assets
 [2]: http://bourbon.io/
 [3]: http://neat.bourbon.io/
