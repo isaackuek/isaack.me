@@ -6,7 +6,6 @@ permalink: /about/
 banner: gasworks.png
 ---
 
-### About Me
 
 {% image portraitIsaacKuek.jpg class="portrait" alt="Portrait of Isaac Kuek" %}
 
@@ -14,6 +13,13 @@ banner: gasworks.png
 I'm a student in the [Informatics][info] Bachelor's program at the University of Washington focused on [Human Computer Interaction](https://ischool.uw.edu/current/informatics/degree-plan/options), graduating in June 2015. 
 
 While studying, I've interned as a User Researcher at Amazon and as a UX Designer at Medbridge, a medical tech startup in Seattle.
+
+<br>
+<a href="http://www.linkedin.com/in/isaackuek" class="button">
+	Connect on LinkedIn
+</a>
+
+<br>
 
 ### How I got into UX
 
