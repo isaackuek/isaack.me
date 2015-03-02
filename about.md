@@ -6,24 +6,28 @@ permalink: /about/
 banner: gasworks.png
 ---
 
-I'm Isaac, an [Informatics][info] undergraduate in my junior year at the University of Washington, graduating in Spring 2015.
+### About Me
 
-I'm a Seattle based UX designer and front end web developer. I enjoy learning new things and skills. I've recently started learning Swift and making latte art to complement my caffeine induced mornings.
+{% image portraitIsaacKuek.jpg class="portrait" alt="Portrait of Isaac Kuek" %}
 
-Thanks for dropping by!
 
-## This Site
-I created this site with Jekyll, a static site generator. I considered several options prior to this; a WordPress powered site, a Bootstrap/Foundation based site, and even a full on Squarespace hosted site.
+I'm a student in the [Informatics][info] Bachelor's program at the University of Washington focused on [Human Computer Interaction](https://ischool.uw.edu/current/informatics/degree-plan/options), graduating in June 2015. 
 
-I eventually settled with Jekyll as the main building block of this site because of its versatile and light weight nature. I can write posts in markup and also HTML! Isn't that awesome?
+While studying, I've interned as a User Researcher at Amazon and as a UX Designer at Medbridge, a medical tech startup in Seattle.
 
-<div class="skills">
-	<h3>NITTY GRITTY DETAILS</h3>
-</div>
+### How I got into UX
 
-> This site runs on [Jekyll][jekyll] with the following plugins: [Jekyll-Assets][1], [Neat][2], [Bourbon][3], [Bitters][4] and SASS.
+After focusing on developing software and websites, I realized it was challenging to 'develop' [flow](http://en.wikipedia.org/wiki/Flow_(psychology)) like those found in good video games and applications. During a class project in late 2013, I conducted my first user interview for a Wikipedia redesign concept and was immediately hooked with discovering their point of view and needs. Since then, I've focused on user experience design by taking HCI classes, [attending local UX meetups](http://www.meetup.com/SeattleUX/) and reading about User Experience design.
 
-> Visit my [Github][github] to see the source code.
+I have since gained experience in qualitative and quantitative research, usability testing for mobile and web, interaction design, wireframing and presenting design decisions to different audiences.
+
+### In a UX Role, I enjoy:
+
+#### __1. Collaborative [gamestorming](http://www.gamestorming.com)__
+I value engaging the people involved in a project. Design artifacts and gamestorming activities help encourage conversations and connect projects to business goals. 
+
+#### __2. Testing, and reiterating__
+I find the most exciting phase of designing is observing actual users test a design in progress. Seeing their successes or failures effectively informs the team how to iterate future designs.
 
 <br>
 
@@ -32,10 +36,3 @@ I eventually settled with Jekyll as the main building block of this site because
 </a>
 
 [info]: https://ischool.uw.edu/
-[github]: http://github.com/{{ site.username }}/isaack.me
-[jekyll]: http://jekyllrb.com/
-
-[1]: https://github.com/ixti/jekyll-assets
-[2]: http://bourbon.io/
-[3]: http://neat.bourbon.io/
-[4]: http://bitters.bourbon.io/

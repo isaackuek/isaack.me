@@ -13,6 +13,11 @@ permalink: pretty
 gems: [jekyll-assets, sass, bourbon, neat]
 
 assets:
+  dirname: assets
+  baseurl: /assets/
+  css_compressor: sass
+  debug: true
+  cache: false
   sources:
     - _assets/javascripts
     - _assets/stylesheets

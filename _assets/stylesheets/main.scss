@@ -43,7 +43,7 @@ a {
 	a {
 		color: $menu-link;
 		text-decoration: none;
-		transition: color 0.25s ease-in 0s;
+		transition: color 0.1s ease-in 0s;
 		&:hover {
 			color: $link-colors;
 		}
@@ -189,6 +189,11 @@ a {
 			box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 		}
 	}
+}
+
+.portrait {
+	max-width: 40%;
+	max-height: 40%;
 }
 
 // Lightbox in Posts HOT DAMN

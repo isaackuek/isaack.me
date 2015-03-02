@@ -8,8 +8,10 @@ skillsets:
   design: [Illustrator, Photoshop]
   programming: [Java, Javascript, SQL, UNIX]
 ---
-
+<a href="/files/resume.pdf" class="button">download full resume (PDF)</a>
 <div class="resumeSkill">
+	<br>
+
 	{% for skillset in page.skillsets %}
 		<h3> {{ skillset[0] }} </h3>
 		{% assign skills = skillset[1] %}
@@ -21,7 +23,9 @@ skillsets:
 	{% endfor %}
 </div>
 
+
 <div class="resumeContent">
+
 	<h2>Education</h2>
 	<h3>University of Washington, Seattle</h3>
 	<p>Graduating in Spring 2015</p>
@@ -53,9 +57,6 @@ skillsets:
 		<li>Analyze and optimize internal deployment workflows based on surveys and user research.</li>
 	</ul>
 
-	<br>
-
-	<a href="/files/resume.pdf" class="button">download full resume (PDF)</a>
 
 	<br>
 
