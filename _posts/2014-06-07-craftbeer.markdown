@@ -8,18 +8,39 @@ image:
 category: work
 external:
   url: http://isaackuek.github.io
-skills: Visual Design, Web Development
+skills: Visual Design, Data Visualization
 ---
 
-Introduction
+About the Project
 ---
 
-The Rise of Craft Beer Infographic was a final project deliverable for an Information Visualization course focusing on visual design.
+American Craft Beer has rapidly developed over the past decade. Having sampled many beers from craft breweries in the Seattle area, I made an infographic to show the history and development of craft beer over time. 
 
 The task was to exploit the visual potential of information categorized into location, numbers, appearance, relationships and time based on a topic of choice.
 
-Craft beer had an interesting development in the US and I sought to compile an infographic that would show what craft beer was and show its development over time.
+The Rise of Craft Beer Infographic was a final project deliverable for an Information Visualization course focusing on visual design.
 
+
+**Like this infographic?** 
+
+<a href="http://on.be.net/1rVNgqY" class="button">
+	Appreciate it on Behance!
+</a>
+
+<br>
+
+{% image infographicsCraftBeer.png %}
+
+
+
+Results
+---
+Through this project, I learned:
+
+- > How to process large sets of data and turn them into visualizations with Tableau
+- > The ubiquitous pen tool in Illustrator.
+- > Color theory, typography and layout.
+- > The beauty of design critiques.
 
 Tools
 ---
