@@ -19,6 +19,12 @@ The challenge was to create a unified experience, addressing the needs of each p
 
 Our final deliverables were a class presentation and a working hi-fi prototype.
 
+Final Hi-Fi Prototype
+---
+
+<iframe width="396" height="834" src="//invis.io/9EW2ZT4J" frameborder="0" allowfullscreen></iframe>
+
+
 Design Process
 ---
 - **Define** the problem through a competitive audit of ridesharing alternatives (Lyft, Uber, Zipcar, Flywheel)
