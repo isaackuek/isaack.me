@@ -1,4 +1,38 @@
 ---
+layout: portfolio
+title: "Portfolio"
+tags: [design, illustration, work, porftolio]
+banner: projects.png
+---
+<div class="wrap">
+	<div class="">
+		<p>A collection of my selected work.</p>
+		<!-- <p style="margin-bottom: 0px;">
+			UX Designer. Web Developer.
+		</p>
+		<p>Informatics Major.</p> -->
+<!-- 
+		<div class="skills">Human Computer Interaction</div>
+		<hr>
+		<a href="/portfolio/" class="button">View portfolio</a> -->
+
+	</div>
+</div>
+
+<div class="tiles">
+<!-- Taken out Work Categories! -->
+{% for post in site.posts %}
+  {% include post-grid.html %}
+{% endfor %}
+</div><!-- /.tiles -->
+
+
+
+
+
+
+
+<!-- ---
 layout: default
 ---
 
@@ -13,3 +47,4 @@ layout: default
 		<a href="/portfolio/" class="button">View portfolio</a>
 	</div>
 </div>
+ -->

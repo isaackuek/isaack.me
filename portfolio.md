@@ -11,4 +11,3 @@ banner: projects.png
   {% include post-grid.html %}
 {% endfor %}
 </div><!-- /.tiles -->
-

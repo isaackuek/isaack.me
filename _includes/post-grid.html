@@ -11,6 +11,8 @@
 		<a href="{{ post.url }}">{{ post.title }}</a>
 	</h2>
 
+	<!-- Keeps the excerpt short, strips any live html code in the excerpt and max char at 160 -->
+	<p class="post-excerpt" itemprop="description">{{ post.excerpt | strip_html | truncate: 160 }}</p>
 
 	{% if post.skills %}
 		<div class="skills">
@@ -18,6 +20,4 @@
 		</div>
 	{% endif %}
 	<br>
-	<!-- Keeps the excerpt short, strips any live html code in the excerpt and max char at 160 -->
-	<p class="post-excerpt" itemprop="description">{{ post.excerpt | strip_html | truncate: 160 }}</p>
 </article><!-- /.tile -->

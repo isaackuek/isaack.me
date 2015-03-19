@@ -1,7 +1,8 @@
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+html {
   box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
 
 button,
 input[type="submit"] {
@@ -24,12 +25,12 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: white;
   color: #333;
-  font-family: "Proxima Nova", "Avenir", "Open Sans", sans-serif;
+  font-family: "Proxima Nova", "Avenir", "Open Sans", "Arial" sans-serif;
   font-size: 1em;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Proxima Nova", "Avenir", "Open Sans", sans-serif;
+  font-family: "Proxima Nova", "Avenir", "Open Sans", "Arial" sans-serif;
   line-height: 1.25em;
   margin: 0;
   text-rendering: optimizeLegibility; }
@@ -100,7 +101,7 @@ input,
 label,
 select {
   display: block;
-  font-family: "Proxima Nova", "Avenir", "Open Sans", sans-serif;
+  font-family: "Proxima Nova", "Avenir", "Open Sans", "Arial" sans-serif;
   font-size: 1em; }
 
 label {
@@ -112,29 +113,27 @@ label {
     display: none; }
 
 textarea,
-input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea,
 select[multiple=multiple] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   -webkit-transition: border-color;
   -moz-transition: border-color;
   transition: border-color;
+  box-sizing: border-box;
   background-color: white;
   border-radius: 0.1875em;
   border: 1px solid #DDD;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
-  font-family: "Proxima Nova", "Avenir", "Open Sans", sans-serif;
+  font-family: "Proxima Nova", "Avenir", "Open Sans", "Arial" sans-serif;
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em 0.5em;
   width: 100%; }
   textarea:hover,
-  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+  input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:hover,
   select[multiple=multiple]:hover {
     border-color: #c4c4c4; }
   textarea:focus,
-  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+  input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus,
   select[multiple=multiple]:focus {
     border-color: #477DCA;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
@@ -436,12 +435,13 @@ a {
     color: #307EA9; }
 
 .wrap {
-  max-width: 40.625em;
-  margin: 0 auto; }
-  .wrap:after {
+  max-width: 53.75em;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrap::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
 
 .site-header {
   margin: 75px 0 25px;
@@ -463,21 +463,25 @@ a {
     font-weight: 200; }
     .site-header a:hover {
       color: #307EA9; }
+  .site-header p {
+    text-transform: none;
+    margin-bottom: 0; }
   .site-header .name a {
     font-size: 30px; }
 
 .tile {
-  max-width: 40.625em;
-  margin: 0 auto;
+  max-width: 53.75em;
+  margin-left: auto;
+  margin-right: auto;
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
   margin-bottom: 1.618em; }
-  .tile:after {
+  .tile::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
   .tile:last-child {
     margin-right: 0; }
   .tile:nth-child(2n) {
@@ -565,7 +569,7 @@ a {
 .inner-wrap .thumbnail figcaption {
   padding-left: 3.236em;
   padding-right: 3.236em;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-size: 12px;
   color: #4d4d4d;
   text-align: center;
@@ -621,7 +625,7 @@ a {
     display: block; }
 
 .footnotes {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif; }
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif; }
   .footnotes p, .footnotes li {
     font-size: 12px; }
   .footnotes:before {
@@ -629,12 +633,13 @@ a {
     font-weight: 700; }
 
 .pagination {
-  max-width: 40.625em;
-  margin: 0 auto; }
-  .pagination:after {
+  max-width: 53.75em;
+  margin-left: auto;
+  margin-right: auto; }
+  .pagination::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
   .pagination .back {
     float: left; }
   .pagination .next {

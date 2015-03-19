@@ -49,7 +49,11 @@ a {
 		}
 		font-weight: 200;
 	}
-
+	
+	p {
+		text-transform: none;
+		margin-bottom: 0;
+	}
 
 
 	.name a {
